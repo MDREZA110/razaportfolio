@@ -197,6 +197,15 @@ a {
   max-width: 12ch;
 }
 
+.hero-role {
+  margin: 1rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
 .section-heading h2,
 .contact-band h2 {
   font-size: clamp(2.4rem, 4.5vw, 4.4rem);
