@@ -5,310 +5,302 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Mohammad Raza's premium portfolio showcasing mobile app development, projects, skills, and an in-page resume preview."
+      content="Mohammad Raza software developer portfolio with projects, experience, education, skills, and contact."
     />
-    <title>Mohammad Raza | Portfolio</title>
+    <title>Mohammad Raza | Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
   </head>
   <body>
-    <div class="backdrop backdrop-a"></div>
-    <div class="backdrop backdrop-b"></div>
-
     <header class="topbar">
       <a class="brand" href="#top" aria-label="Back to top">
-        <span class="brand-mark">M</span>
+        <span class="brand-mark">MR</span>
         <span class="brand-copy">
           <strong>Mohammad Raza</strong>
-          <span>Flutter developer and app builder</span>
+          <span>Software Engineer</span>
         </span>
       </a>
-      <nav class="nav">
-        <a href="#work">Work</a>
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero section" data-reveal>
-        <div class="hero-copy">
-          <p class="eyebrow">Who loves research &amp; development</p>
-          <h1>Mohammad Raza</h1>
-          <p class="hero-role">Software developer</p>
-          <p class="lede">
-            I’m Mohammad Raza, a B.Tech CSE student and software developer who builds polished Flutter experiences, practical UI systems, and production-minded interfaces with a clean, premium feel.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#resume">View Resume</a>
-            <a
-              class="button button-secondary"
-              href="assets/Mohammad_Raza_CV2.pdf"
-              download="Mohammad_Raza_Resume.pdf"
-            >
-              Download Resume
-            </a>
-          </div>
-          <div class="hero-signals">
-            <div>
-              <strong>Flutter</strong>
-              <span>Cross-platform app delivery</span>
-            </div>
-            <div>
-              <strong>UI craft</strong>
-              <span>Refined layouts and polish</span>
-            </div>
-            <div>
-              <strong>API work</strong>
-              <span>REST integration and debugging</span>
-            </div>
-          </div>
+      <section class="hero" data-reveal>
+        <h1>Mohammad<br />Raza</h1>
+        <p class="hero-role">Software Engineer</p>
+        <div class="hero-actions">
+          <button class="btn btn-solid" id="view-resume-btn" type="button">View Resume</button>
+          <a class="btn" href="assets/Mohammad_Raza_CV2.pdf" download="Mohammad_Raza_Resume.pdf">Download Resume</a>
         </div>
-
-        <aside class="hero-panel glass">
-          <div class="panel-badge">Profile</div>
-          <div class="portrait-mark">MR</div>
-          <p class="panel-title">Built for clean product experiences.</p>
-          <p class="panel-copy">
-            Focused on Flutter, Dart, UI architecture, and hands-on mobile app development with a practical eye for quality.
-          </p>
-          <div class="panel-stats">
-            <div>
-              <strong>3+</strong>
-              <span>Featured projects</span>
-            </div>
-            <div>
-              <strong>6+</strong>
-              <span>Core skill areas</span>
-            </div>
-            <div>
-              <strong>1</strong>
-              <span>Live internship</span>
-            </div>
-          </div>
-        </aside>
       </section>
 
-      <section class="section" id="work" data-reveal>
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects that show range, not repetition.</h2>
+      <section class="section split" id="about" data-reveal>
+        <div class="section-tag">About</div>
+        <div class="section-content">
+          <h2>I am Mohammad Raza.</h2>
           <p>
-            A portfolio should feel edited, not stacked. These projects show app development, product thinking, and real implementation depth.
+            a B.Tech Computer Science &amp; Engineering (CSE) final year student.
+          </p>
+          <p>
+            I have professional internship experience as a Junior Application Developer at Auctech MarCom Pvt. Ltd.,
+            where I worked on Flutter development, API integration, debugging, and feature enhancement for real
+            products.
+          </p>
+          <p>
+            I am passionate about building useful and user-focused software. I enjoy turning ideas into practical
+            applications with clean code, better performance, and clear design execution.
+          </p>
+          <p>
+            My goal is to keep learning, improve as a software engineer, and contribute to impactful products through
+            consistent and quality-driven development.
           </p>
         </div>
+      </section>
 
-        <div class="grid projects-grid">
-          <article class="card project-card glass">
-            <div class="card-topline">
-              <span>01</span>
-              <span>Featured project</span>
-            </div>
-            <h3>Maryam App</h3>
-            <p>
-              A Flutter product shipped with UI polish, authentication flows, searchable reading experiences, PDF handling, and responsive layouts for production use.
-            </p>
-            <div class="tag-row">
-              <span>Flutter</span>
-              <span>Provider</span>
-              <span>MVVM</span>
-              <span>PDF reader</span>
-            </div>
-            <div class="project-links">
-              <a href="https://play.google.com/store/apps/details?id=com.maryam.magzine" target="_blank" rel="noreferrer">Play Store</a>
-            </div>
-          </article>
+      <section class="section split" id="projects" data-reveal>
+        <div class="section-tag">Projects</div>
+        <div class="section-content">
+          <h2>Selected work</h2>
+          <div class="project-stack">
+            <article class="project-row project-featured">
+              <div class="project-index">01</div>
+              <div>
+                <h3>Maryam App</h3>
+                <p>
+                  Production Flutter app built independently from scratch to deployment-ready release, including OTP
+                  login, subscription-gated content access, search, PDF reader/download, and responsive UI
+                  optimization.
+                </p>
+              </div>
+              <a class="row-link" href="https://play.google.com/store/apps/details?id=com.maryam.magzine" target="_blank" rel="noreferrer">Play Store</a>
+            </article>
 
-          <article class="card project-card glass">
-            <div class="card-topline">
-              <span>02</span>
-              <span>EdTech app</span>
-            </div>
-            <h3>SIMT (EdTech) App</h3>
-            <p>
-              Contributed to frontend development for a cross-platform learning app with login and sign-up, referral flows, live chat, API integration, and layout debugging.
-            </p>
-            <div class="tag-row">
-              <span>Flutter</span>
-              <span>Dart</span>
-              <span>REST APIs</span>
-              <span>UI optimization</span>
-            </div>
-            <div class="project-links">
-              <a href="https://play.google.com/store/apps/details?id=com.auchect.simt" target="_blank" rel="noreferrer">Play Store</a>
-            </div>
-          </article>
+            <article class="project-row">
+              <div class="project-index">02</div>
+              <div>
+                <h3>SIMT App</h3>
+                <p>
+                  Frontend development contribution for an EdTech app with login/sign-up, referral workflow, live chat,
+                  backend API integration, and layout debugging.
+                </p>
+              </div>
+              <a class="row-link" href="https://play.google.com/store/apps/details?id=com.auchect.simt" target="_blank" rel="noreferrer">Play Store</a>
+            </article>
 
-          <article class="card project-card glass">
-            <div class="card-topline">
-              <span>03</span>
-              <span>Personal brand</span>
+            <article class="project-row">
+              <div class="project-index">03</div>
+              <div>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                  Responsive personal website built with HTML, CSS, JavaScript, and React to present profile, projects,
+                  and skills in one place.
+                </p>
+              </div>
+              <a class="row-link" href="https://mohammadraza.netlify.app/" target="_blank" rel="noreferrer">Live Site</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="experience" data-reveal>
+        <div class="section-tag">Experience</div>
+        <div class="section-content">
+          <h2>Internship</h2>
+          <article class="card experience-card">
+            <div class="experience-head">
+              <h3>Auctech MarCom Pvt. Ltd.</h3>
+              <div class="experience-meta">
+                <p class="meta">Junior Application Developer</p>
+                <p class="meta">01 Feb 2025 - 31 Jul 2025</p>
+              </div>
             </div>
-            <h3>Portfolio Website</h3>
-            <p>
-              Designed and developed a fully responsive personal portfolio website to present academic background, technical skills, and projects in one central place.
+            <p class="experience-copy">
+              Built cross-platform Flutter interfaces, integrated REST APIs, worked on debugging and performance
+              optimization, and contributed to feature enhancements during a paid internship.
             </p>
-            <div class="tag-row">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>React</span>
-              <span>Responsive design</span>
-            </div>
-            <div class="project-links">
-              <a href="https://mohammadraza.netlify.app/" target="_blank" rel="noreferrer">Live site</a>
-            </div>
+            <p class="meta experience-tools">Key tools: Flutter, Dart, Postman, API Integration, Figma</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section split" id="education" data-reveal>
+        <div class="section-tag">Education</div>
+        <div class="section-content">
+          <h2>Academic background</h2>
+          <div class="edu-grid">
+            <article class="card">
+              <h3>Bachelor of Technology (CSE)</h3>
+              <p class="meta">Babu Banarasi Das University, Lucknow · Pursuing · 2026</p>
+            </article>
+            <article class="card">
+              <h3>Intermediate (ICSE)</h3>
+              <p class="meta">83% · 2021</p>
+            </article>
+            <article class="card">
+              <h3>High School (ICSE)</h3>
+              <p class="meta">78.16% · 2019</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="section split" id="skills" data-reveal>
-        <div class="section-heading narrow">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Technical strengths with practical execution.</h2>
-          <p>
-            The mix matters: app development, implementation details, and visual discipline.
-          </p>
-        </div>
+        <div class="section-tag">Skills</div>
+        <div class="section-content">
+          <h2>Core stack</h2>
+          <div class="skills-grid" aria-label="Categorized skills">
+            <article class="card skill-group">
+              <h3>Languages</h3>
+              <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>Dart</li>
+                <li>Python</li>
+              </ul>
+            </article>
 
-        <div class="glass capability-panel">
-          <div class="chip-cloud" aria-label="Core skills">
-            <span>Java</span>
-            <span>Python</span>
-            <span>Dart</span>
-            <span>C++</span>
-            <span>Flutter</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Bootstrap</span>
-            <span>Firebase</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>VS Code</span>
-            <span>Figma</span>
-            <span>ML basics</span>
-          </div>
-          <div class="feature-bars">
-            <div>
-              <strong>Mobile-first delivery</strong>
-              <span>Flutter interfaces, app debugging, and responsive behavior.</span>
-            </div>
-            <div>
-              <strong>Integration work</strong>
-              <span>REST APIs, backend coordination, and data-driven screens.</span>
-            </div>
-            <div>
-              <strong>UI systems</strong>
-              <span>Structured layouts, component consistency, and usability polish.</span>
-            </div>
+            <article class="card skill-group">
+              <h3>App Development</h3>
+              <ul>
+                <li>Flutter</li>
+                <li>Dart</li>
+              </ul>
+            </article>
+
+            <article class="card skill-group">
+              <h3>Others</h3>
+              <ul>
+                <li>Figma</li>
+                <li>DSA</li>
+                <li>Machine Learning (Basic)</li>
+                <li>Arduino</li>
+                <li>Image Processing</li>
+                <li>FastAPI</li>
+              </ul>
+            </article>
+
+            <article class="card skill-group">
+              <h3>Tools</h3>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Firebase</li>
+                <li>REST APIs</li>
+                <li>Postman</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="resume" data-reveal>
-        <div class="section-heading">
-          <p class="eyebrow">Resume preview</p>
-          <h2>Shown on the site, without PDF controls.</h2>
-          <p>
-            This is a rendered resume view for quick reading. The actual PDF is available separately through the download button.
-          </p>
-        </div>
-
-        <article class="resume-sheet">
-          <div class="resume-header">
-            <div>
-              <p class="resume-name">Mohammad Raza</p>
-              <p class="resume-role">B.Tech CSE student · Junior Application Developer</p>
-            </div>
-            <div class="resume-contact">
-              <a href="mailto:this.mohammadraza@gmail.com">this.mohammadraza@gmail.com</a>
-              <a href="tel:+916394895557">+91 63948 95557</a>
-              <span>Lucknow, Uttar Pradesh, India</span>
-            </div>
+      <section class="section split" id="contact" data-reveal>
+        <div class="section-tag">Contact</div>
+        <div class="section-content contact-layout">
+          <h2 class="contact-heading">CONTACT</h2>
+          <div class="card contact-card">
+            <ul class="contact-list" aria-label="Contact details">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M12 22c3.4-3.9 7-7.6 7-11.4A7 7 0 0 0 5 10.6C5 14.4 8.6 18.1 12 22Zm0-8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Z" />
+                  </svg>
+                </span>
+                <span>Lucknow, Uttar Pradesh, India</span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M6.8 2h3.1l1.3 4.2-2 1.7a14.7 14.7 0 0 0 6.8 6.8l1.7-2L22 14.1v3.1a2.7 2.7 0 0 1-2.9 2.8C10.7 19.4 4.6 13.3 4 4.9A2.7 2.7 0 0 1 6.8 2Z" />
+                  </svg>
+                </span>
+                <a href="tel:+916394895557">+91-6394895557</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M3 5h18v14H3V5Zm9 7.1L4.7 7h14.6L12 12.1Z" />
+                  </svg>
+                </span>
+                <a href="mailto:this.mohammadraza@gmail.com">this.mohammadraza@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M6.5 8.5A1.5 1.5 0 1 1 6.5 5a1.5 1.5 0 0 1 0 3.5ZM5 10h3v9H5v-9Zm5 0h2.9v1.3h.1c.4-.8 1.4-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.8V19h-3v-4c0-1-.1-2.2-1.4-2.2s-1.5 1-1.5 2.2v4h-3v-9Z" />
+                  </svg>
+                </span>
+                <a href="https://www.linkedin.com/in/mohammad-raza-12559a2a3" target="_blank" rel="noreferrer">LinkedIn</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false">
+                    <path d="M12 .7A12 12 0 0 0 8.2 24c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.6 1.1 1.6 1.1 1 .1.9 2.3 3.6 1.7.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.4-2.3 1.1-3.2-.1-.3-.5-1.5.1-3.2 0 0 .9-.3 3.2 1.2A11 11 0 0 1 12 6.9a11 11 0 0 1 2.9.4c2.3-1.5 3.2-1.2 3.2-1.2.6 1.7.2 2.9.1 3.2.7.9 1.1 1.9 1.1 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.2.8 2.3v2.8c0 .4.2.7.8.6A12 12 0 0 0 12 .7Z" />
+                  </svg>
+                </span>
+                <a href="https://github.com/MDREZA110" target="_blank" rel="noreferrer">GitHub</a>
+              </li>
+            </ul>
           </div>
-
-          <div class="resume-grid">
-            <section>
-              <h3>Profile</h3>
-              <p>
-                Passionate and detail-oriented CSE student with a strong foundation in app development, Flutter, and building user-focused digital products.
-              </p>
-            </section>
-
-            <section>
-              <h3>Core Skills</h3>
-              <p>
-                Java, Python, Dart, C++, Flutter, Git, GitHub, VS Code, Bootstrap, Firebase, Figma, HTML, CSS, and ML basics.
-              </p>
-            </section>
-
-            <section class="resume-wide">
-              <h3>Experience</h3>
-              <div class="resume-entry">
-                <div class="resume-entry-head">
-                  <strong>Auctech MarCom Pvt. Ltd.</strong>
-                  <span>Junior Application Developer · Feb 2025 to Jul 2025</span>
-                </div>
-                <p>
-                  Built and debugged Flutter interfaces, integrated REST APIs, enhanced layouts, and helped optimize the app development workflow during a paid internship.
-                </p>
-              </div>
-            </section>
-
-            <section>
-              <h3>Education</h3>
-              <div class="resume-list">
-                <div>
-                  <strong>B.Tech (CSE)</strong>
-                  <span>Babasaheb Bhimrao Ambedkar University, Lucknow · Pursuing</span>
-                </div>
-                <div>
-                  <strong>Intermediate (ICSE)</strong>
-                  <span>83% · 2021</span>
-                </div>
-                <div>
-                  <strong>High School (ICSE)</strong>
-                  <span>78.16% · 2019</span>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h3>Achievements</h3>
-              <div class="resume-list">
-                <div>Secured a professional internship in the third year of undergraduate studies.</div>
-                <div>Independently built the frontend of a production-level mobile app from scratch.</div>
-                <div>Integrated and managed 30+ RESTful APIs with backend services.</div>
-                <div>Built search, PDF reader, and PDF download features for content access.</div>
-              </div>
-            </section>
-          </div>
-        </article>
-      </section>
-
-      <section class="section contact-band" id="contact" data-reveal>
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Available for portfolio reviews, internships, and focused product work.</h2>
-        </div>
-        <div class="contact-links">
-          <a href="https://www.linkedin.com/in/mohammad-raza-12559a2a3" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/MDREZA110" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="mailto:this.mohammadraza@gmail.com">Email</a>
-          <a href="assets/Mohammad_Raza_CV2.pdf" download="Mohammad_Raza_Resume.pdf">Download PDF</a>
+          <form class="card form" id="message-form">
+            <h2>MESSAGE ME</h2>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-solid">CONTACT</button>
+            <p id="form-status" class="status" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>
 
+    <div class="resume-alert" id="resume-alert" aria-hidden="true">
+      <div class="resume-alert-dialog" role="dialog" aria-modal="true" aria-labelledby="resume-alert-title">
+        <div class="resume-alert-head">
+          <h2 id="resume-alert-title">Resume Preview</h2>
+          <button class="resume-alert-close" id="resume-alert-close" type="button" aria-label="Close resume preview">Close</button>
+        </div>
+        <iframe
+          class="resume-alert-frame"
+          src="assets/Mohammad_Raza_CV2.pdf"
+          title="Mohammad Raza Resume"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
     <footer class="footer">
-      <p>Mohammad Raza · <span id="year"></span></p>
-      <p>Premium portfolio with an in-page resume preview and a separate PDF download.</p>
+      <p>Mohammad Raza · <span id="year"></span> · All rights reserved</p>
     </footer>
   </body>
 </html>
